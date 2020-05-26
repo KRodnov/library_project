@@ -1,0 +1,43 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+
+fieldset {
+
+    text-align: center;
+}
+
+input,select {
+    margin: 5px 0;
+}
+
+.newbook, .sort, .filter {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+button {
+    background-color: blue;
+    border: 2px solid silver;
+    color: wheat;
+    margin: 5px;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.tr_big {
+    font-size: 20px;
+    font-weight: bold;
+}
+.library-container {
+    margin-bottom: 80px;
+    text-align: center;
+    /*min-width: 650px;*/
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+<h1>Система учета книг в библиотеке</h1>
+<fieldset>
+    <legend class="newbook">Добавление новой книги</legend>
+    <label for="nameBook">Название книги</label>
+    <input  id="nameBook" type="text" placeholder="Введите название книги">
+    <br>
+    <fieldset>
+        <legend>Автор книги</legend>
+    <label for="authorNameBook">Имя автора</label>
+        <input  id="authorNameBook" type="text" placeholder="Введите имя автора">
+        <label for="authorSurnameBook">Фамилия автора</label>
+        <input  id="authorSurnameBook" type="text" placeholder="Введите фамилию автора">
+    </fieldset>
+    <br>
+    <label for="yearBook">Год издания</label>
+    <input  id="yearBook" type="number" placeholder="Введите год издания">
+    <br>
+    <label for="genreBook">Жанр</label>
+    <select name="" id="genreBook">
+    <option value="Детективы">Детективы</option>
+    <option value="Фантастика">Фантастика</option>
+    <option value="Триллер">Триллер</option>
+        <option value="Роман">Роман</option>
+        <option value="Проза">Проза</option>
+        <option value="Классика">Классика</option>
+        <option value="Комиксы">Комиксы</option>
+    </select>
+    <br>
+    <br>
+    <button id="addNewBook">Добавить книгу</button>
+</fieldset>
+
+<fieldset>
+    <legend class="sort">Соритровка</legend>
+    <button id="sortYearBookUp">По году издания (по возрастанию)</button>
+    <br>
+    <button id="sortYearBookDown">По году издания (по убыванию)</button>
+    <br>
+    <button id="sortAuthorSurnameBookUp">По фамилии автора (по возрастанию)</button>
+    <br>
+    <button id="sortAuthorSurnameBookDown">По фамилии автора (по убыванию)</button>
+</fieldset>
+
+<fieldset>
+    <legend class="filter">Фильтры</legend>
+    <label>Годы издания</label>
+    <input id="publication-from" placeholder="от" type="number">
+    <input id="publication-to" placeholder="до" type="number">
+    <button id="yearFilter" class="filter-button" >Фильтр по году</button>
+    <br>
+    <label>Жанр:</label>
+    <button class="filter-button" id="filterAll">Все жанры</button>
+    <button class="filter-button" id="filterDetective">Детектив</button>
+    <button class="filter-button" id="filterFantasy">Фантастика</button>
+    <button class="filter-button" id="filterThriller">Триллер</button>
+    <button class="filter-button" id="filterNovel">Роман</button>
+    <button class="filter-button" id="filterProse">Проза</button>
+    <button class="filter-button" id="filterClassic">Классика</button>
+    <button class="filter-button" id="filterComics">Комиксы</button>
+</fieldset>
+
+<div class="library-container">
+<h2>Книги в библиотеке:</h2>
+<div id="library"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
